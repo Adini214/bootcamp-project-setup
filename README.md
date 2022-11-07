@@ -19,7 +19,6 @@ Navigate to the projects root and execute command below.
 `yarn install` to install all dependencies.
 
 ## Step 3: file integrity confirmation
-
 Check if `package.json` contains lines:
 
 ```json
@@ -35,7 +34,6 @@ jest should output lines as below:
 
 ```text
 yarn run v1.22.19
-$ jest
   console.log
     The perimeter of a rectangle is 18 and the area is 20
 
@@ -47,15 +45,17 @@ $ jest
       at Object.log (tests/rectangle.test.js:15:37)
 
  PASS  tests/rectangle.test.js
-  √ should calculate the equation (1 ms)
-  √ should output the equation
-  √ should display rectangle info (21 ms)
-  √ value is positive? (1 ms)
+  √ calculates rectangle perimeter (3 ms)
+  √ calculates rectangle area
+  √ displays rectangle info (33 ms)
+  √ value is positive
+  √ is a value (3 ms)
 
 Test Suites: 1 passed, 1 total
-Tests:       4 passed, 4 total
+Tests:       5 passed, 5 total
 Snapshots:   0 total
-Time:        0.986 s, estimated 2 s
+Time:        1.477 s, estimated 2 s
+Ran all test suites.
 ```
 
 ### If terminal output says that all tests passed then it means we finished the task correctly
