@@ -1,16 +1,16 @@
 import { getRectangleArea, getRectanglePerimeter, getRectangleInfo } from '../js/rectangle';
 
-test('should calculate the equation', () => {
+test('should calculate rectangle perimeter', () => {
     const outputPerimeter = getRectanglePerimeter(5,6);
     expect(outputPerimeter).toBe(22);
 });
 
-test('should output the equation', () => {
+test('should calculate rectangle area', () => {
     const outputArea = getRectangleArea(7,9);
     expect(outputArea).toBe(63);
 });
 
-test('should display rectangle info', () => {
+test('should calculate and display rectangle info', () => {
     const outputInfo = getRectangleInfo(4,5);
     expect(outputInfo).toBe(console.log(`The perimeter of a rectangle is ${18} and the area is ${20}`));
 });
@@ -21,7 +21,7 @@ test('value is positive?', () => {
 
 });
 
-test('is a value',() => {
+test('is a value?',() => {
     const outputValue = getRectangleArea(4,8);
     expect(outputValue).toBeTruthy();
 });
